@@ -20,7 +20,9 @@ body {
 }
 main {
   display: flex;
+  gap: 2rem;
   border-radius: 1rem;
+  padding: 2rem 1rem 2rem 3rem;
   background-color: var(--background-app);
 }
 section:first-child {
@@ -28,7 +30,6 @@ section:first-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 1.5rem 2rem 2.5rem;
   gap: 2rem;
 }
 .information {
@@ -43,7 +44,7 @@ section h1 {
 
 section p {
   font-size: 0.9rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 section ul {
@@ -54,8 +55,9 @@ section ul {
 }
 section ul li {
   display: flex;
-  text-align: center;
+  align-items: flex-start;
   font-size: 1rem;
+  font-weight: 300;
   gap: 1rem;
 }
 section ul li img {
@@ -73,9 +75,11 @@ section form label {
 }
 
 section form input {
+  font-weight: 300;
   padding: 0.8rem;
   margin-bottom: 0.8rem;
   border-radius: 0.4rem;
+  opacity: 0.7;
   border: 1px solid rgb(188, 188, 188);
   outline: none;
 }
@@ -89,9 +93,51 @@ section form button {
   color: #ffffff;
   background-color: var(--button-color);
 }
-section:nth-child(2) {
-  padding: 1rem 1.2rem;
-}
+
 section:nth-child(2) img {
   width: 300px;
+}
+
+@media (max-width: 780px) {
+  main {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  section:first-child {
+    order: 2;
+    padding: 1.5rem;
+  }
+  section h1 {
+    font-size: 2.2rem;
+  }
+
+  section p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  section ul li {
+    display: flex;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    gap: 1rem;
+  
+  }
+
+  form {
+    margin-bottom: 1rem
+  }
+
+  .img {
+    width: 100%;
+    background-image: url(../images/illustration-sign-up-mobile.svg);
+  }
 }
