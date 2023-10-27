@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="icon"
@@ -11,7 +10,13 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -19,20 +24,26 @@
   <body>
     <main>
       <section>
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="information">
+          <h1>Stay updated!</h1>
+          <p>
+            Join 60,000+ product managers receiving monthly<br />updates on:
+          </p>
 
-        <ul>
-          <li>
-            <img src="./assets/images/icon-success.svg" alt="" /> Product
-            discovery and building what matters
-          </li>
-          <li>
-            <img src="./assets/images/icon-success.svg" /> Measuring to ensure
-            updates are a success
-          </li>
-          <li><img src="./assets/images/icon-success.svg" />And much more!</li>
-        </ul>
+          <ul>
+            <li>
+              <img src="./assets/images/icon-success.svg" alt="" /> Product
+              discovery and building what matters
+            </li>
+            <li>
+              <img src="./assets/images/icon-success.svg" /> Measuring to ensure
+              updates are a success
+            </li>
+            <li>
+              <img src="./assets/images/icon-success.svg" />And much more!
+            </li>
+          </ul>
+        </div>
 
         <form>
           <label for="email">Email address</label>
@@ -44,6 +55,9 @@
           />
           <button type="submit">Subscribe to monthly newsletter</button>
         </form>
+      </section>
+      <section>
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
       </section>
 
       <!-- 
