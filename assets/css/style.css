@@ -143,6 +143,7 @@ section:nth-child(2) img {
 }
 .attribution {
   color: #ffffff;
+  padding: 1rem 0;
 }
 .attribution a {
   color: rgb(84, 103, 207);
