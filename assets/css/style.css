@@ -3,7 +3,7 @@
   --background-app: #ffffff;
   --letter-color: black;
   --button-color: rgb(24, 33, 67);
-  --active-element:#ff4700;
+  --active-element: #ff4700;
 }
 * {
   margin: 0;
@@ -70,10 +70,19 @@ section form {
   width: 100%;
   flex-direction: column;
 }
+.email-box-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.email-box-info span {
+  font-size: 0.7rem;
+  color: red;
+}
 
 section form label {
   font-size: 0.7rem;
-  margin-bottom: 0.5rem;
 }
 
 section form input {
@@ -87,7 +96,7 @@ section form input {
   outline: none;
 }
 
-section form button {
+button {
   cursor: pointer;
   padding: 0.8rem;
   border: none;
@@ -96,12 +105,47 @@ section form button {
   color: #ffffff;
   background-color: var(--button-color);
 }
-section form button:hover {
+button:hover {
   background-color: var(--active-element);
 }
 
 section:nth-child(2) img {
   width: 300px;
+}
+
+#email-states {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: var(--background-app);
+  padding: 2.5rem;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
+  max-width: 360px;
+}
+.message-states {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.email-states img {
+  width: 3rem;
+}
+.email-states h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.email-states p {
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  word-break: normal;
+}
+.attribution {
+  color: #ffffff;
+}
+.attribution a {
+  color: rgb(84, 103, 207);
 }
 
 @media (max-width: 780px) {
@@ -146,12 +190,31 @@ section:nth-child(2) img {
     width: 100%;
     background-image: url(../images/illustration-sign-up-mobile.svg);
   }
+
+  .email-states {
+    min-width: 100vw;
+    min-height: 100%;
+    border-radius: 0rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .message-states {
+    margin: auto;
+  }
+
+  .attribution {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
 }
 
-.attribution {
-  margin-top: 2rem;
-  color: #ffffff;
+.hide {
+  display: none;
 }
-.attribution a {
-  color: rgb(84, 103, 207);
+
+.alert {
+  font-weight: 500;
+  color: red;
+  border: 1px solid red;
+  background-color: rgba(255, 126, 126, 0.52);
 }

@@ -25,30 +25,32 @@
   </head>
   <body>
     <main>
-      <section>
-        <div class="information">
-          <h1>Stay updated!</h1>
-          <p>
-            Join 60,000+ product managers receiving monthly<br />updates on:
-          </p>
-
-          <ul>
-            <li>
+           <section>
+                 <div class="information">
+                       <h1>Stay updated!</h1>
+                       <p>
+                        Join 60,000+ product managers receiving       monthly<br /   >updates on:
+                       </p>
+                        <ul>
+             <li>
               <img src="./assets/images/icon-success.svg" alt="" /> Product
               discovery and building what matters
-            </li>
-            <li>
+             </li>
+             <li>
               <img src="./assets/images/icon-success.svg" /> Measuring to ensure
               updates are a success
-            </li>
-            <li>
+              </li>
+             <li>
               <img src="./assets/images/icon-success.svg" />And much more!
-            </li>
-          </ul>
-        </div>
+              </li>
+                       </ul>
+                  </div>
 
-        <form>
-          <label for="email">Email address</label>
+              <form>
+          <div class="email-box-info">
+            <label for="email">Email address</label>
+            <span class="alert-message hide">Valid email required</span>
+          </div>
           <input
             type="email"
             name="email"
@@ -56,27 +58,36 @@
             placeholder="email@company.com"
           />
           <button type="submit">Subscribe to monthly newsletter</button>
-        </form>
-      </section>
-      <section>
-        <picture>
-          <source
-            srcset="./assets/images/illustration-sign-up-mobile.svg"
-            media="(max-width: 780px)"
-          />
-          <img
-            id="image"
-            src="./assets/images/illustration-sign-up-desktop.svg"
-            alt=""
-          />
-        </picture>
-      </section>
+              </form>
 
-      <!-- 
-      Thanks for subscribing! A confirmation email has been sent to
-      ash@loremcompany.com. Please open it and click the button inside to
-      confirm your subscription. Dismiss message -->
+           </section>
+           <section>
+                  <picture>
+                    <source
+                      srcset="./assets/images/illustration-sign-up-mobile.svg"
+                      media="(max-width: 780px)"
+                   />
+                    <img
+                      id="image"
+                     src="./assets/images/illustration-sign-up-desktop.svg"
+                     alt=""
+                   />
+                 </picture>
+           </section>
     </main>
+    <div class="email-states hide">
+            <div class="message-states">
+                   <img src="./assets/images/icon-success.svg" />
+                   <h2>Thanks for </br>
+                     subscribing!</h2>
+                   <p>
+                    A confirmation email has been sent to 
+                   <b>ash@loremcompany.com.</b> Please open it and click
+                    the button inside to confirm your subscription
+                  </p>
+            </div>
+                <button>Dismiss message</button>
+    </div>
 
     <div class="attribution">
       Challenge by
