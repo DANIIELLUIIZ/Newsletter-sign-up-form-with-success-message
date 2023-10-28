@@ -3,6 +3,7 @@
   --background-app: #ffffff;
   --letter-color: black;
   --button-color: rgb(24, 33, 67);
+  --active-element:#ff4700;
 }
 * {
   margin: 0;
@@ -76,6 +77,7 @@ section form label {
 }
 
 section form input {
+  cursor: pointer;
   font-weight: 300;
   padding: 0.8rem;
   margin-bottom: 1rem;
@@ -93,6 +95,9 @@ section form button {
   border-radius: 0.4rem;
   color: #ffffff;
   background-color: var(--button-color);
+}
+section form button:hover {
+  background-color: var(--active-element);
 }
 
 section:nth-child(2) img {
@@ -143,12 +148,10 @@ section:nth-child(2) img {
   }
 }
 
-
 .attribution {
   margin-top: 2rem;
   color: #ffffff;
 }
 .attribution a {
-
   color: rgb(84, 103, 207);
 }
