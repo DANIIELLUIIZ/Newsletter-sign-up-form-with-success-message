@@ -113,7 +113,7 @@ section:nth-child(2) img {
   width: 300px;
 }
 
-#email-states {
+.submit-states {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -128,14 +128,14 @@ section:nth-child(2) img {
   flex-direction: column;
   gap: 1.3rem;
 }
-.email-states img {
+.submit-states img {
   width: 3rem;
 }
-.email-states h2 {
+.submit-states h2 {
   font-size: 2rem;
   line-height: 2rem;
 }
-.email-states p {
+.submit-states p {
   line-height: 1.3rem;
   font-size: 0.8rem;
   font-weight: 300;
@@ -192,14 +192,14 @@ section:nth-child(2) img {
     background-image: url(../images/illustration-sign-up-mobile.svg);
   }
 
-  .email-states {
+  .submit-states {
     min-width: 100vw;
     min-height: 100%;
     border-radius: 0rem;
     justify-content: space-between;
     padding: 1.5rem;
   }
-  .message-states {
+  .state-message-sucess {
     margin: auto;
   }
 
