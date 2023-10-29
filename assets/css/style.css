@@ -1,6 +1,6 @@
 :root {
-  --background: hsl(227, 45%, 14%);
-  --background-app: #ffffff;
+  --background: hsl(234, 29%, 20%);
+  --background-app: hsl(0, 0%, 100%);
   --letter-color: black;
   --button-color: rgb(24, 33, 67);
   --active-element: #ff4700;
@@ -46,7 +46,7 @@ section h1 {
 
 section p {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 section ul {
